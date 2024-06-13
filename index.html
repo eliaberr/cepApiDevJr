@@ -14,47 +14,79 @@
 
 <body>
     <header class="text-center display-6">Cadastro de Clientes</header>
-    <main>
+    <main class="container shadow mt-5">
         <section>
-            <div class="container shadow mt-5">
-                <form class="row g-3">
-                    <div class="col-md-6">
-                      <label for="inputName" class="form-label">Nome</label>
-                      <input type="text" class="form-control" id="inputName">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputSobreNome" class="form-label">Sobre Nome</label>
-                      <input type="text" class="form-control" id="inputSobreNome">
-                    </div>
-                    <div class="col-4">
-                      <label for="inputCep" class="form-label">CEP</label>
-                      <input type="text" class="form-control" id="inputCep" placeholder="Digite Seu Cep">
-                    </div>
-                    <div class="col-9">
-                      <label for="inputEndereco" class="form-label">Endereço</label>
-                      <input type="text" class="form-control" id="inputEndereco" placeholder="Digite seu Endereço">
-                    </div>
-                    <div class="col-md-3">
-                        <label for="inputNumeroEndereco" class="form-label">Número</label>
-                        <input type="text" class="form-control" id="inputNumeroEndereco">
-                      </div>
-                    <div class="col-6">
-                      <label for="inputBairro" class="form-label">Bairro</label>
-                      <input type="text" class="form-control" id="inputBairro">
-                    </div>
-                    <div class="col-6">
-                        <label for="inputCidade" class="form-label">Cidade</label>
-                        <input type="text" class="form-control" id="inputCidade">
-                      </div>
-                    <div class="col-md-2">
-                      <label for="inputEstado" class="form-label">Estado</label>
-                      <input type="text" class="form-control" id="inputEstado">
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <button type="submit" class="btn btn-primary">Salvar</button>
-                    </div>
-                  </form>
-            </div>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputSobreNome" class="form-label">Sobre Nome</label>
+                    <input type="text" class="form-control" id="inputSobreNome">
+                </div>
+                <div class="col-4">
+                    <label for="inputCep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="inputCep" placeholder="Digite Seu Cep">
+                </div>
+                <div class="col-9">
+                    <label for="inputEndereco" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="inputEndereco" placeholder="Digite seu Endereço">
+                </div>
+                <div class="col-md-3">
+                    <label for="inputNumeroEndereco" class="form-label">Número</label>
+                    <input type="text" class="form-control" id="inputNumeroEndereco">
+                </div>
+                <div class="col-6">
+                    <label for="inputBairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="inputBairro">
+                </div>
+                <div class="col-6">
+                    <label for="inputCidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="inputCidade">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEstado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="inputEstado">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome Completo</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="col">CEP</th>
+                        <th scope="col">Bairro</th>
+                        <th scope="col">Cidade</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 </body>
