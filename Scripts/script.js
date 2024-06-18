@@ -99,6 +99,26 @@ function addNewRow(cli){
 }
 
 
+function consultarCep(){
+    
+    var cepDigitado = document.getElementById("inputCep").value
+    var url = `https://viacep.com.br/ws/${cepDigitado}/json/`
+                
+    
+    console.log(url)
+
+    $.getJSON(url, (response) =>{
+        $("#inputEndereco").val(response.logradouro)
+        $("#inputBairro").val(response.bairro)
+        $("#inputCidade").val(response.localidade)
+        $("#inputEstado").val(response.uf)
+    })
+
+
+    
+
+}
+
 
 
 
