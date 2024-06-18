@@ -65,8 +65,6 @@ function save(){
     console.log(cli.bairro)
 
     document.getElementById("formCliente").reset()
-
-
 }
 
 
