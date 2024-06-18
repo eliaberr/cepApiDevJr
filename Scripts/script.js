@@ -44,6 +44,28 @@ function loadClientes(){
     }
 }
 
+function save(){
+    cli = [
+        {
+            id:clientes.length + 1,
+            name: document.getElementById("inputName").value,
+            sobreNome: document.getElementById("inputSobreNome").value,
+            cep: document.getElementById("inputCep").value,
+            endereco: document.getElementById("inputEndereco").value,
+            numeroResidencia: document.getElementById("inputNumeroEndereco").value,
+            bairro: document.getElementById("inputBairro").value,
+            cidade: document.getElementById("inputCidade").value,
+            estado: document.getElementById("inputEstado").value,
+        }
+    ]
+
+    console.log(cli.bairro)
+
+
+}
+
+
+
 function addNewRow(cli){
     console.log("Iae")
 
