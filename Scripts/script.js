@@ -45,9 +45,10 @@ function loadClientes(){
 }
 
 function save(){
-    cli = [
-        {
-            id:clientes.length + 1,
+
+    
+    cli = {
+            id: clientes.length + 1,
             name: document.getElementById("inputName").value,
             sobreNome: document.getElementById("inputSobreNome").value,
             cep: document.getElementById("inputCep").value,
@@ -57,9 +58,13 @@ function save(){
             cidade: document.getElementById("inputCidade").value,
             estado: document.getElementById("inputEstado").value,
         }
-    ]
+    
 
+    addNewRow(cli)
+    clientes.push(cli)
     console.log(cli.bairro)
+
+    document.getElementById("formCliente").reset()
 
 
 }

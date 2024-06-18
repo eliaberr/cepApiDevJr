@@ -14,7 +14,7 @@
     <header class="text-center display-6">Cadastro de Clientes</header>
     <main class="container shadow my-5 p-5">
         <section>
-            <form class="row g-3" onsubmit="save(); return false">
+            <form class="row g-3" onsubmit="save(); return false" id="formCliente">
                 <div class="col-md-6">
                     <label for="inputName" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="inputName" required>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-md-3">
                     <label for="inputNumeroEndereco" class="form-label">Número</label>
-                    <input type="text" class="form-control" id="inputNumeroEndereco" required>
+                    <input type="number" class="form-control" id="inputNumeroEndereco" required>
                 </div>
                 <div class="col-6">
                     <label for="inputBairro" class="form-label">Bairro</label>
