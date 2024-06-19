@@ -1,3 +1,5 @@
+$("#inputCep").mask("99999-999");
+
 var clientes = [
   {
     id: 1,
