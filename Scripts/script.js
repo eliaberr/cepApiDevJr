@@ -1,4 +1,4 @@
-$("#inputCep").mask("99999-999");
+$("#inputCep").mask("99999-999")
 
 var clientes = [
   {
@@ -159,3 +159,4 @@ function residenciaSemNumero(){
         habilitarInput("#inputNumeroEndereco")
     }
 }
+
