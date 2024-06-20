@@ -1,40 +1,6 @@
 $("#inputCep").mask("99999-999")
 
-var clientes = [
-  {
-    id: 1,
-    name: "Eliabe",
-    sobreNome: "Rodrigues",
-    cep: "13308-123",
-    endereco: "Rua Pedrugulho",
-    numeroResidencia: "72",
-    bairro: "Cidade Nova",
-    cidade: "Itu",
-    estado: "SP",
-  },
-  {
-    id: 2,
-    name: "laís",
-    sobreNome: "Ribeiro",
-    cep: "18105-279",
-    endereco: "Rua Tarcízio Carlos Leite",
-    numeroResidencia: "142",
-    bairro: "jardim Eliana",
-    cidade: "Sorocaba",
-    estado: "SP",
-  },
-  {
-    id: 3,
-    name: "Izabelly",
-    sobreNome: "Rodrigues",
-    cep: "13308-075",
-    endereco: "Rua Campinas",
-    numeroResidencia: "157",
-    bairro: "Cidade Nova",
-    cidade: "Itu",
-    estado: "SP",
-  },
-];
+var clientes = [];
 
 loadClientes();
 
