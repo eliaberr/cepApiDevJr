@@ -4,8 +4,8 @@
 1. [Sobre o Sistema](#sobre-o-sistema)
 2. [Teste do Sistema](#teste-do-sistema)
 3. [Responsividade](#responsividade)
-   1. [Desktop](#desktop)
-   2. [Mobile](#mobile)
+4. [Responsividade Desktop](#desktop)
+5. [Versão Mobile](#mobile)
 
 ## Sobre o Sistema
 <div>
