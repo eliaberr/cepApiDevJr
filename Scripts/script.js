@@ -60,17 +60,27 @@ function addNewRow(cli) {
   newRow.insertCell().appendChild(enderecoNode);
 
   var cepNode = document.createTextNode(cli.cep);
-  newRow.insertCell().appendChild(cepNode);
+  var cell = newRow.insertCell()
+  cell.className=`d-none d-md-table-cell`
+  cell.appendChild(cepNode)
 
   bairroNode = document.createTextNode(cli.bairro);
-  newRow.insertCell().appendChild(bairroNode);
+  var cell = newRow.insertCell()
+  cell.className=`d-none d-lg-table-cell`
+  cell.appendChild(bairroNode)
 
   cidadeNode = document.createTextNode(cli.cidade);
-  newRow.insertCell().appendChild(cidadeNode);
+  var cell = newRow.insertCell()
+  cell.className=`d-none d-sm-table-cell`
+  cell.appendChild(cidadeNode)
 
   estadoNode = document.createTextNode(cli.estado);
-  newRow.insertCell().appendChild(estadoNode);
+  var cell = newRow.insertCell()
+  cell.className=`d-none d-sm-table-cell`
+  cell.appendChild(estadoNode)
 }
+
+
 
 function consultarCep() {
   var cepDigitado = document.getElementById("inputCep").value;

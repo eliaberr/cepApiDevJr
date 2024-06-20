@@ -13,28 +13,28 @@
 
 <body>
     <header class="text-center display-6">Cadastro de Clientes</header>
-    <main class="container shadow my-5 p-5">
+    <main class="container-xl shadow my-5 p-1 p-sm-5">
         <section>
             <form class="row g-3" onsubmit="save(); return false" id="formCliente">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <label for="inputName" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="inputName" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <label for="inputSobreNome" class="form-label">Sobre Nome</label>
                     <input type="text" class="form-control" id="inputSobreNome" required>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                     <label for="inputCep" class="form-label">CEP</label>
                     <input type="text" class="form-control" id="inputCep" placeholder="Digite Seu Cep" onblur="consultarCep()" required>
                 </div>
-                <div class="col-8">
-                   <br>
+                <div class="col-8 col-sm-4 ">
+                    <div ><br></div>
                     <span class="text-danger form-control border-0 mt-2" id="mensagemErro"></span>
                 </div>
                
                 
-                <div class="col-9">
+                <div class="col-md-9">
                     <label for="inputEndereco" class="form-label">Endereço</label>
                     <input type="text" class="form-control" id="inputEndereco"  disabled>
                 </div>
@@ -43,19 +43,19 @@
                     <input type="number" class="form-control" id="inputNumeroEndereco" disabled required>
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckSemNumero" onclick="residenciaSemNumero()" checked disabled >
                         <label class="form-check-label" for="flexCheckDefault">
-                            Residência sem numero
+                            S/N
                         </label>
                       
                 </div>
-                <div class="col-6">
+                <div class="col-ms-6 d-none d-lg-table-cell">
                     <label for="inputBairro" class="form-label">Bairro</label>
-                    <input type="text" class="form-control" id="inputBairro" disabled>
+                    <input type="text" class="form-control " id="inputBairro" disabled>
                 </div>
-                <div class="col-6">
-                    <label for="inputCidade" class="form-label">Cidade</label>
+                <div class="col-ms-6 d-none d-sm-table-cell">
+                    <label for="inputCidade" class="form-label ">Cidade</label>
                     <input type="text" class="form-control" id="inputCidade" disabled>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 d-none d-sm-table-cell">
                     <label for="inputEstado" class="form-label">Estado</label>
                     <input type="text" class="form-control" id="inputEstado" disabled>
                 </div>
@@ -73,10 +73,10 @@
                         <th scope="col">#</th>
                         <th scope="col">Nome Completo</th>
                         <th scope="col">Endereço</th>
-                        <th scope="col">CEP</th>
-                        <th scope="col">Bairro</th>
-                        <th scope="col">Cidade</th>
-                        <th scope="col">Estado</th>
+                        <th scope="col" class="d-none d-md-table-cell">CEP</th>
+                        <th scope="col" class="d-none d-lg-table-cell">Bairro</th>
+                        <th scope="col" class="d-none d-sm-table-cell">Cidade</th>
+                        <th scope="col" class="d-none d-sm-table-cell">Estado</th>
                     </tr>
                 </thead>
                 <tbody>
