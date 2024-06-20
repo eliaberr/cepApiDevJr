@@ -1,5 +1,12 @@
 # Cadastro de Clientes Com API CEP
 
+## Índice
+1. [Sobre o Sistema](#sobre-o-sistema)
+2. [Teste do Sistema](#teste-do-sistema)
+3. [Responsividade](#responsividade)
+   1. [Desktop](#desktop)
+   2. [Mobile](#mobile)
+
 ## Sobre o Sistema
 <div>
   O sistema de cadastro de clientes com iPad e CEP é uma ferramenta eficiente que
@@ -11,8 +18,10 @@
   Caso o cliente não possua um número de residência, existe a funcionalidade "sem número",
   que, quando ativada, desativa o campo de entrada para o número, adaptando-se às diferentes
   situações de cadastro. Essa flexibilidade torna o sistema mais versátil e fácil de usar.
+</div>
 
-  ### Teste Do Sitema
+## Teste do Sistema
+<div>
   <img src="assets\gifs\TesteApp.gif"/>
 </div>
 
@@ -25,12 +34,16 @@
   são ocultados, e os campos de entrada correspondentes são removidos,
   exceto o campo de CEP, que é fundamental para a funcionalidade de busca e
   preenchimento automático de endereço, garantindo eficiência mesmo em telas menores.
+</div>
 
-  ### Desktop
+### Desktop
+<div>
   <img src="assets\gifs\responsividadeDesktop.gif"/>
   <br>
   <hr>
-  
-  ### Mobile
+</div>
+
+### Mobile
+<div>
   <img src="assets\gifs\Mobile.gif"/>
 </div>
