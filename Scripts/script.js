@@ -48,6 +48,10 @@ function loadClientes() {
 
 function save() {
 
+    habilitarOuDesativarInput("#flexCheckSemNumero", true)
+    habilitarOuDesativarInput("#inputNumeroEndereco", true)
+
+
     var numero = document.getElementById("inputNumeroEndereco").value
     
     if(numero == ""){
@@ -69,7 +73,7 @@ function save() {
 
   addNewRow(cli);
   clientes.push(cli);
-  console.log(cli.bairro);
+  
 
   document.getElementById("formCliente").reset();
 }
@@ -118,7 +122,7 @@ function consultarCep() {
         $("#inputCidade").val(response.localidade);
         $("#inputEstado").val(response.uf);
         
-        habilitarInput("#flexCheckSemNumero")
+        habilitarOuDesativarInput("#flexCheckSemNumero", false)
         mensagenErro("");
         
        
@@ -143,9 +147,11 @@ function apagarInputsErro(){
     $("#inputEstado").val("");
 }
 
-function habilitarInput(id){
-    $(id).prop('disabled', false)
+function habilitarOuDesativarInput(id, falseOrTrue){
+    $(id).prop('disabled', falseOrTrue)
 }
+
+
 
 
 
@@ -156,7 +162,7 @@ function residenciaSemNumero(){
     if(semNumero == true){
         $("#inputNumeroEndereco").prop('disabled', true).val("")
     }else{
-        habilitarInput("#inputNumeroEndereco")
+        habilitarOuDesativarInput("#inputNumeroEndereco", false)
     }
 }
 
