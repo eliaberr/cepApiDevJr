@@ -9,7 +9,7 @@
 
 ## Sobre o Sistema
 <div>
-  O sistema de cadastro de clientes com iPad e CEP é uma ferramenta eficiente que
+  O sistema de cadastro de clientes com API de CEP é uma ferramenta eficiente que
   permite registrar clientes de maneira simplificada. Durante o cadastro, o usuário insere o CEP do cliente,
   e o sistema utiliza uma API para buscar automaticamente o endereço completo,
   incluindo bairro, cidade e estado. Esse processo agiliza o preenchimento das informações e reduz a margem de erro.
