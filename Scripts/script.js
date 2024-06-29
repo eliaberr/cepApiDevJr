@@ -89,9 +89,11 @@ function consultarCep() {
   //console.log(url)
 
   $.getJSON(url, (response) => {
-    if (response.erro == true) {
+    if (response.erro == "true") {
         apagarInputsErro()
         mensagenErro("CEP Inexistente");
+        habilitarOuDesativarInput("#btnSalvar", true)
+        
     } else {
         $("#inputEndereco").val(response.logradouro);
         $("#inputBairro").val(response.bairro);
@@ -100,12 +102,13 @@ function consultarCep() {
         
         habilitarOuDesativarInput("#flexCheckSemNumero", false)
         mensagenErro("");
-        
+        habilitarOuDesativarInput("#btnSalvar", false)
        
     }
   }).fail(() => {
     apagarInputsErro()
     mensagenErro("CEP Inválido");
+    habilitarOuDesativarInput("#btnSalvar", true)
   });
 }
 
